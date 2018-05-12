@@ -5,7 +5,7 @@ import re
 class NewsSpider(Spider):
     name = 'news_spider'
     #allowed_url = ['https://news.google.com/'] <-- this does not work
-    start_urls = ['https://news.google.com/gn/news/story/dzKCSGh0R5pOluMghLneLUheNaoHM?hl=en&ned=us&gl=US']
+    start_urls = ['https://news.google.com/gn/news/story/d3qlsHllqrM9HkMJwpqlvpZeGrPLM?hl=en&ned=us&gl=US']
     #start_urls=['https://www.google.com/search?q=turkey+presidential+elections&tbm=nws&source=lnt&tbs=qdr:d&sa=X&ved=0ahUKEwikrdeS4f3aAhVNx1kKHcOxDg8QpwUIHg&biw=1440&bih=704&dpr=1']
     
     #def parse_through_pages(self, response):
@@ -47,7 +47,3 @@ class NewsSpider(Spider):
             #item['Content']=content
 
             yield item
-
-
-
-        
